@@ -28,6 +28,9 @@ AFRAME.registerComponent("coins", {
         loop: "true",
         dur: 1000,
       });  
+
+      coinEl.setAttribute('static-body', {shape: 'sphere', sphereRadius: 5})
+      coinEl.setAttribute('game', {elementId: `#${id}`})
        
       //Task5:- add it as a child  of treasureEntity
       treasureEntity.appendChild(coinEl);

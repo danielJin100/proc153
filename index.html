@@ -3,6 +3,7 @@
   <head>
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/zcanter/aframe-gradient-sky/master/dist/gradientsky.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
 
     <!-- COMPONENT FILES-->
     <script src="./js/Fish.js"></script>
@@ -10,6 +11,7 @@
     <script src="./js/Rotation.js"></script>
     <script src="./js/Treasure.js"></script>
 
+    <script src="./js/game.js"></script>
   
   </head>
   <body>
@@ -96,6 +98,7 @@
         position="5 0 15"
         rotation="0 90 -20"
         diver-rotation-reader
+        game
       >
         <a-sphere
           id="bubble1"
